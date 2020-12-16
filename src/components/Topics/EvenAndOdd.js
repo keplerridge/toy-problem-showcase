@@ -39,8 +39,8 @@ class EvenAndOdd extends Component {
                 <h4>Evens and Odds</h4>
                 <input className='inputLine' onChange = {(e) => this.handleChange(e.target.value)}/>
                 <button className='confirmationButton' onClick={ () => {this.assignEvenAndOdds(this.state.userInput)}}>Split</button>
-                <span className='resultsBox'>Evens: {this.state.evenArray}</span>
-                <span className='resultsBox'>Odds: {this.state.oddArray}</span>
+                <span className='resultsBox'>Evens: {JSON.stringify(this.state.evenArray)}</span>
+                <span className='resultsBox'>Odds: {JSON.stringify(this.state.oddArray)}</span>
             </div>
         )
     }
