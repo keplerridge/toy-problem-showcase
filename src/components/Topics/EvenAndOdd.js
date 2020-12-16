@@ -4,6 +4,7 @@ class EvenAndOdd extends Component {
 
     constructor () {
         super();
+        
         this.state = {
             evenArray: [],
             oddArray: [],
